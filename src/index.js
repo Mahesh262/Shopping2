@@ -3,14 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Provider } from 'react-redux';
-import {Todostore} from './ReduxTodo/TodoStore'
+import {Provider} from 'react-redux'
+import { createStore } from 'redux';
+import { CartReducers } from './ShoppingMAll/CartReducer';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { devToolsEnhancer } from '@redux-devtools/extension';
+const store = createStore(CartReducers, devToolsEnhancer())
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={Todostore} >
-    <App />
+    <Provider store ={store}>
+      <Router>
+      <App />
+      </Router>
     </Provider>
-  
+      
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,11 +1,18 @@
 import React from 'react'
-import TodoAdd from './ReduxTodo/TodoAdd'
-import TodoList from './ReduxTodo/TodoList'
+import { Route, Routes } from 'react-router'
+
+import './App.css'
+import CartProduct from './ShoppingMAll/CartProduct'
+import CartView from './ShoppingMAll/CartView'
 const App = () => {
   return (
     <>
-    <TodoAdd/>
-    <TodoList/>
+    Hello
+ 
+    <Routes>
+    <Route path='/' element = {<CartProduct/>}/>
+      <Route path='/Cart' element = {<CartView/>}/>
+    </Routes>
    
     </>
   )
