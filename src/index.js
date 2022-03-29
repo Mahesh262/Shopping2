@@ -1,26 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './App'
 import reportWebVitals from './reportWebVitals';
 
 import {Provider} from 'react-redux'
-import ShopStore from './Redux toolkits/ShopStore'
+// import store from './Store/Store'
 // import { createStore } from 'redux';
 // import { CartReducers } from './ShoppingMAll/CartReducer';
 // import { BrowserRouter as Router } from 'react-router-dom';
 //  import { devToolsEnhancer } from '@redux-devtools/extension';
 //  const store = createStore(CartReducers, devToolsEnhancer())
-
+import Store from './Store'
 ReactDOM.render(
+
   <React.StrictMode>
-     <Provider store ={ShopStore}> 
-      {/* <Router> */}
+  <Provider store ={Store}>
+
       <App />
-      {/* </Router> */}
-   </Provider> 
-      
+  </Provider>
+
   </React.StrictMode>,
+
   document.getElementById('root')
 );
 
