@@ -1,20 +1,20 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
-import Logout from './Login/Logout'
-import Signup from './Login/Signup'
-import { selectUser } from './Login/UserSlice'
-
+import React from "react";
+import { Col, Row } from "react-bootstrap";
+import Examples from "./Examples";
+import Examplss from "./Examplss";
 const App = () => {
-  let user = useSelector(selectUser)
   return (
-    <div>
-      
-     {
-       user ?  <Logout/>:<Signup/>
-     }
+    <>
+      <Row>
+        <Col xs={6} xl={6}>
+          <Examplss />
+        </Col>
+        <Col xs={6} xl={6}>
+          <Examples />
+        </Col>
+      </Row>
+    </>
+  );
+};
 
-
-    </div>
-  )
-}
-export default App
+export default App;
