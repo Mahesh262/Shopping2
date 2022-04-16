@@ -1,11 +1,10 @@
 import React from "react";
-import TopBar from "./Charity/TopBar";
-import Banner from "./Charity/Banner";
+import Newform from "./Forms/Newform";
+
 const App = () => {
   return (
     <>
-      <TopBar />
-      <Banner />
+      <Newform />
     </>
   );
 };
