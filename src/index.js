@@ -3,21 +3,19 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-
-// import {Provider} from 'react-redux'
-// import store from './Store/Store'
-// import { createStore } from 'redux';
-// import { CartReducers } from './ShoppingMAll/CartReducer';
-// import { BrowserRouter as Router } from 'react-router-dom';
-//  import { devToolsEnhancer } from '@redux-devtools/extension';
-//  const store = createStore(CartReducers, devToolsEnhancer())
-//  import Store from './Store'
+import { BrowserRouter as Router } from "react-router-dom";
+import { Provider } from "react-redux";
+import { createStore } from "redux";
+import { CartReducer } from "./Shopping/CartReducer";
+import { devToolsEnhancer } from "@redux-devtools/extension";
+let store = createStore(CartReducer, devToolsEnhancer());
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Provider store ={Store}>  */}
-
-    <App />
-    {/* </Provider>  */}
+    <Provider store={store}>
+      <Router>
+        <App />
+      </Router>
+    </Provider>
   </React.StrictMode>,
 
   document.getElementById("root")

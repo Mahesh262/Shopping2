@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    /* border: 2px solid green; */
+}
+
+.removecart,
+.addcart{
+    border:none;
+    color: aliceblue;
+    padding: 10px;
+    width: 100%;
+    border-radius: 22px;
+}
+.addcart{
+    background-color: rgb(14, 98, 70);
+}
+.removecart{
+    background-color: rgb(223, 22, 55);
+
+}
+.products{
+    color:black;
+     font-size:20px;
+}
+.backside{
+    font-size:50px;
+    color: rgba(0, 255, 255, 0.611);
+}
