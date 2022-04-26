@@ -1,9 +1,9 @@
 import React from "react";
-import Home from "./Shopping/Home";
+import Tables from "./Tables";
 const App = () => {
   return (
     <>
-      <Home />
+      <Tables />
     </>
   );
 };
