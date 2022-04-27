@@ -1,9 +1,9 @@
 import React from "react";
-import Tables from "./Tables";
+import Home from "./Contact Tracker/Home";
 const App = () => {
   return (
     <>
-      <Tables />
+      <Home />
     </>
   );
 };

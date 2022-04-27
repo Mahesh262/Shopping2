@@ -1,0 +1,72 @@
+*{
+    /* border: 2px solid green; */
+}
+.search{
+    font-weight: 50;
+    font-size: small;
+    width: 100%;
+    outline: none;
+    border:none
+ }
+ 
+ .threeicons{
+     font-size: 25px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-end;
+      gap:1rem;
+      
+ }
+ 
+ .dels{
+   color:rgb(178, 32, 85)
+ }
+ .upArrw{
+   color:green
+ }
+ .inputs{
+   display: flex;
+   align-items: center;
+   opacity: 0.5;
+ 
+ }
+ .captions{
+   opacity: 0.5;
+ }
+ .weeks{
+   display: flex;
+    align-items: flex-start;
+     gap: 3rem;
+ }
+ .weekends{
+   text-transform: uppercase;
+   display: flex;
+   flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+   opacity: 0.5;
+   padding: 10px;
+   transition: all 1s;
+ }
+ .seconds{
+     border: 0.5px solid rgba(0, 139, 7, 0.593);
+    border-radius: 5px;
+     color: green;
+     opacity: 1;
+ }
+ .dots{
+     width:0.7rem;
+     height: 10px;
+     border-radius: 100%;
+     display: flex;
+     align-items: flex-start;
+     justify-content:space-between;
+     border: 2px solid green;
+     background: green;
+      display: none;
+ }
+ .dotsacts{
+      display: block;
+ }
+ 
