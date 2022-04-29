@@ -1,11 +1,14 @@
 import React from "react";
-import data from "./search";
-import Space from "./Space/Space";
+import { Routes, Route } from "react-router-dom";
+import Products from "./ShoppingCart/Products";
+import CartView from "./ShoppingCart/CartView";
 const App = () => {
-  console.log(data.map((items) => items.launch));
   return (
     <>
-      <Space />
+      <Routes>
+        <Route path="/" element={<Products />} />
+        <Route path="/CartView/:id" element={<CartView />} />
+      </Routes>
     </>
   );
 };
