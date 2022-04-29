@@ -1,9 +1,11 @@
 import React from "react";
-import Home from "./Contact Tracker/Home";
+import data from "./search";
+import Space from "./Space/Space";
 const App = () => {
+  console.log(data.map((items) => items.launch));
   return (
     <>
-      <Home />
+      <Space />
     </>
   );
 };
