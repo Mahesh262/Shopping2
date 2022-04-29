@@ -3,7 +3,7 @@
     /* border: 2px solid green; */
 }
 .banners{
-     width:'100%';
+     width:100%;
     background: url('https://cdn.pixabay.com/photo/2016/11/22/19/08/hangers-1850082_960_720.jpg');
     height: 70vh;
     background-repeat: no-repeat;
@@ -12,6 +12,8 @@
      align-items: center;
      font-weight: bold;
      transition: all 0.5s;
+    background-size:cover;
+    background-position:center;
 }
 .banners>h2{
     transition: all 0.5s;
